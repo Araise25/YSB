@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Shorts Blocker</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: 'Courier New', monospace;
+      text-align: center;
+      background: #000;
+      color: #0f0;
+      border: 2px solid #0f0;
+      box-shadow: 0 0 10px #0f0;
+    }
+    h3 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: #0ff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    p {
+      font-size: 12px;
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+    .logo {
+      margin: 10px 0;
+    }
+    .highlight {
+      color: #ff0;
+      font-weight: bold;
+    }
+    .blink {
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    button {
+      background: #0f0;
+      color: #000;
+      border: 2px solid #0ff;
+      padding: 5px 10px;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      cursor: pointer;
+      margin: 10px 0;
+      position: relative;
+    }
+    button:hover {
+      background: #ff0;
+      color: #000;
+    }
+    #timer {
+      display: none;
+      font-size: 12px;
+      color: #ff0;
+      margin: 5px 0;
+    }
+    #message {
+      display: none;
+      font-size: 12px;
+      color: #0ff;
+      margin-top: 10px;
+    }
+    #confirmMessage {
+      display: none;
+      font-size: 12px;
+      color: #ff0;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <h3>YouTube Shorts Blocker</h3>
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100" viewBox="0 0 200 100">
+      <rect width="200" height="100" fill="#000"/>
+      <rect x="4" y="4" width="192" height="92" fill="none" stroke="#0f0" stroke-width="2"/>
+      <path d="M10,10 L20,10 L20,90 L10,90 L10,10 M180,10 L190,10 L190,90 L180,90 L180,10" stroke="#0f0" stroke-width="2"/>
+      <text x="100" y="40" fill="#0f0" font-family="Courier New, monospace" font-size="14" text-anchor="middle">YouTube Shorts Blocker</text>
+      <path d="M80,60 L120,60 L100,50 Z" fill="#0f0"/>
+      <path d="M70,45 L130,75" stroke="#ff0" stroke-width="4"/>
+      <text x="100" y="90" fill="#0ff" font-family="Courier New, monospace" font-size="12" text-anchor="middle">404 Shorts</text>
+    </svg>
+  </div>
+  <p>
+    <span class="highlight">sudo rm rf Shorts</span><br>
+    <span class="blink">CONGRATS HACKER</span> Youve 404d YouTube Shorts<br>
+    Your productivity cache is cleared and your uptime is now <span class="highlight">over 9000 percent</span> Go debug the Matrix or yeet some code
+  </p>
+  <button id="toggleButton">Show Shorts</button>
+  <div id="confirmMessage">Click the button again to confirm it will reload the page</div>
+  <div id="timer"></div>
+  <div id="message"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
